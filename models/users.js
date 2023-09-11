@@ -20,7 +20,8 @@ const {
 const {
         defineProps
     } = require("../helpers/all-purpose.js");
-const SECRET_KEY = require("../keys.js");
+// const SECRET_KEY = require("../keys.js");
+const SECRET_KEY = process.env.KEY;
 // const jsonschema = require("jsonschema");
 const userSchema = require("../schemas/userRegister.json");
 const loginSchema = require("../schemas/userLogin.json");
