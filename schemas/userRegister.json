@@ -1,0 +1,103 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "username",
+        "first_name",
+        "last_name",
+        "email",
+        "phone",
+        "password"
+    ],
+    "properties": {
+        "username": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 30,
+            "title": "The username Schema",
+            "examples": [
+                "fvin"
+            ]
+        },
+        "first_name": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 30,
+            "title": "The first_name Schema",
+            "examples": [
+                "Vin"
+            ]
+        },
+        "last_name": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 30,
+            "title": "The last_name Schema",
+            "examples": [
+                "I"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "format": "email",
+            "title": "The email Schema",
+            "examples": [
+                "bank@g.com"
+            ]
+        },
+        "phone": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "title": "The phone Schema",
+            "examples": [
+                "813 507 4490"
+            ]
+        },
+        "header_img": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "title": "The header_img Schema",
+            "examples": [
+                "testHeaderImage"
+            ]
+        },
+        "profile_img": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "title": "The profile_img Schema",
+            "examples": [
+                "testProfileImage"
+            ]
+        },
+        "password": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "title": "The password Schema",
+            "examples": [
+                "password"
+            ]
+        }
+    },
+    "examples": [{
+        "username": "fvin",
+        "first_name": "Vin",
+        "last_name": "I",
+        "email": "bank@g.com",
+        "phone": "813 507 4490",
+        "header_img": "testHeaderImage",
+        "profile_img": "testProfileImage",
+        "password": "password"
+    }]
+}

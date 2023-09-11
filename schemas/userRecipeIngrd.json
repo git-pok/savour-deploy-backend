@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "qty",
+        "unit_id",
+        "ingredient_id"
+    ],
+    "properties": {
+        "qty": {
+            "type": "number",
+            "default": "",
+            "title": "The User Recipe Ingredients Schema",
+            "examples": [
+                1
+            ]
+        },
+        "unit_id": {
+            "type": "number",
+            "title": "The User Recipe Ingredients Schema",
+            "examples": [
+                1
+            ]
+        },
+        "ingredient_id": {
+            "type": "number",
+            "title": "The User Recipe Ingredients Schema",
+            "examples": [
+                1
+            ]
+        }
+    },
+    "examples": [{
+        "qty": 2,
+        "unit_id": 3,
+        "ingredient_id": 4
+    }]
+}

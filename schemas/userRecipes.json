@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": ["recipe_name"],
+    "properties": {
+        "recipe_name": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 121,
+            "title": "The User Recipes Schema",
+            "examples": [
+                "Dumplings List Recipe"
+            ]
+        }
+    },
+    "examples": [{
+        "recipe_name": "Dumplings List Recipe"
+    }]
+}

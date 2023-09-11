@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": ["occasion_id", "list_name"],
+    "properties": {
+        "occasion_id": {
+            "type": "number",
+            "title": "The Recipe Lists Schema",
+            "examples": [
+                3
+            ]
+        },
+        "list_name": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 30,
+            "title": "The Recipe Lists Schema",
+            "examples": [
+                "weekly meals"
+            ]
+        }
+    },
+    "examples": [{
+        "occasion_id": 2,
+        "list_name": "weekly meals"
+    }]
+}

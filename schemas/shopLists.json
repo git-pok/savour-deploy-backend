@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": ["recipe_id", "list_name"],
+    "properties": {
+        "recipe_id": {
+            "type": "number",
+            "title": "The Shop List Schema",
+            "examples": [
+                3
+            ]
+        },
+        "list_name": {
+            "type": "string",
+            "default": "",
+            "minLength": 1,
+            "maxLength": 121,
+            "title": "The Shop List Schema",
+            "examples": [
+                "Dumplings List"
+            ]
+        }
+    },
+    "examples": [{
+        "recipe_id": 2,
+        "list_name": "Dumplings List"
+    }]
+}
