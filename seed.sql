@@ -26649,25 +26649,9 @@ CREATE TABLE user_recipes_ingredients (
     ingredient_id INTEGER REFERENCES ingredients (id)
 );
 
-INSERT INTO user_recipes_ingredients
-  (user_recipe_id, qty, unit_id, ingredient_id)
-VALUES
-  (1, 2, 3, 20), (1, 3, 3, 10), (1, 2, 5, 40),
-  (1, 2, 1, 12), (1, 12, 2, 11), (1, 30, 3, 21),
-  (2, 30, 3, 21);
 
 CREATE TABLE user_recipes_steps (
     id SERIAL PRIMARY KEY,
     user_recipe_id INTEGER REFERENCES user_recipes (id) ON DELETE CASCADE,
     step TEXT NOT NULL
 );
-
-INSERT INTO user_recipes_steps
-  (user_recipe_id, step)
-VALUES
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.'),
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.'),
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.'),
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.'),
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.'),
-  (1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam dignissim, imperdiet lorem a, mollis odio.');
