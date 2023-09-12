@@ -1,4 +1,5 @@
-const SECRET_KEY = require("../keys.js");
+// const SECRET_KEY = require("../keys.js");
+const SECRET_KEY = process.env.KEY;
 const ExpressError = require("../models/error.js");
 
 const {
